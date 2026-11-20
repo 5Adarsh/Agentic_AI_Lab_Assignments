@@ -1,19 +1,73 @@
-# Agentic AI Systems — 14 Weeks / Labs
-
-Run the complete collection through one terminal launcher:
-
+Agentic AI Systems — 14 Weeks / Labs
+This repository contains the practical lab programs and assignments for the 14-week Agentic AI Systems course. Use the root-level terminal launcher to navigate the collection.
+Run the project
+Open PowerShell or a terminal in the project root directory and run:
 ```powershell
 python main.py
 ```
-
-Choose a week, then choose to run its main lab program, Assignment 1, Assignment 2, or view either assignment question. There is no run-all option.
-
-Each `weeks/Week_XX_Name/` folder contains its own `main.py`, `Assignment_1/`, and `Assignment_2/`. Each assignment folder contains an independently runnable `main.py` and `ASSIGNMENT_QUESTION.md` with the prompt extracted from the supplied Agentic AI Lab Guide.
-
-You can also run files directly, for example:
-
+The launcher displays the 14-week menu. Select a week to open its menu.
+For each week, you can:
+Run the main lab program.
+Run Assignment 1.
+Run Assignment 2.
+View the Assignment 1 question.
+View the Assignment 2 question.
+Return to the week-selection menu.
+There is no run-all option. Each program is launched individually.
+Project structure
+The project should follow this folder structure:
+```text
+Agentic-AI-Systems/
+│
+├── main.py
+│
+└── weeks/
+    ├── Week_01_Agentic_Chatbot/
+    │   ├── main.py
+    │   ├── Assignment_1/
+    │   │   ├── main.py
+    │   │   └── ASSIGNMENT_QUESTION.md
+    │   └── Assignment_2/
+    │       ├── main.py
+    │       └── ASSIGNMENT_QUESTION.md
+    │
+    ├── Week_02_Tool_Using_Agent/
+    │   ├── main.py
+    │   ├── Assignment_1/
+    │   └── Assignment_2/
+    │
+    ├── ...
+    │
+    └── Week_14_Capstone_Project_Studio/
+        ├── main.py
+        ├── Assignment_1/
+        │   ├── main.py
+        │   └── ASSIGNMENT_QUESTION.md
+        └── Assignment_2/
+            ├── main.py
+            └── ASSIGNMENT_QUESTION.md
+```
+Each week has its own `main.py` for the main lab. Each assignment is independently runnable from its own `main.py`. The `ASSIGNMENT_QUESTION.md` file contains the corresponding assignment prompt.
+Run a file directly
+You can also run an individual lab or assignment without using the launcher.
 ```powershell
+# Week 1 main lab
 python "weeks/Week_01_Agentic_Chatbot/main.py"
+
+# Week 1 Assignment 1
 python "weeks/Week_01_Agentic_Chatbot/Assignment_1/main.py"
+
+# Week 1 Assignment 2
 python "weeks/Week_01_Agentic_Chatbot/Assignment_2/main.py"
 ```
+Change the week folder and assignment path to run another program.
+Requirements
+Python 3.8 or later recommended.
+No third-party packages are required for the terminal launcher itself.
+Individual lab programs may have their own dependencies. Install those only if the selected lab requires them.
+Important notes
+Run `python main.py` from the project root so the launcher can locate the `weeks/` directory.
+Keep the folder names and structure consistent with the paths used by the launcher.
+If the launcher reports a missing file, check that the relevant week's `main.py` or assignment files are present.
+Assignment question files must be named `ASSIGNMENT_QUESTION.md` and placed inside their corresponding assignment folders.
+The launcher runs one selected program at a time; it does not execute all 14 weeks automatically.
